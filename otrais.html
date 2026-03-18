@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <style>
+    body {
+        background-color: #FFF0ED;
+        font-family: Verdana, sans-serif;  /* W3.CSS default font */
+    }
+
+    /* Apply the same font to all inputs, buttons, links, textareas */
+    input, button, select, textarea, a {
+        font-family: Verdana, sans-serif;
+    }
+
+    /* Optional: remove underline from links */
+    a {
+        text-decoration: none;
+        color: inherit; /* keeps W3.CSS colors */
+    }
+</style>
+    </head>
+    <body>
+        <a href="file://ri.riga.lv/rv1g/Audzekni/enuksa3/My%20Documents/NetBeansProjects/datorika/public_html/index.html"> <img src="images/arow.webp" width="150" height="100"></a>
+        <h1>Formas un ievadlauku piemērs</h1>
+    <form>
+        <p>Šodienas datums <input name="datums"></p>
+        <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
+            <input onclick="datums.value=new Date();" name="poga" value="DATUMS" type="button">
+        </p>
+        <p>Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
+            <input value="RESET" type="reset">
+        </p>
+    </form>
+         <form>
+        <div>1.skaitlis<input type="text" name="sk1"> </div>
+        <div>
+            <input value="+" name="reiz" onclick="rez.value=Number(sk1.value)+Number(sk2.value)" type="button">
+            <input value="-" name="reiz" onclick="rez.value=sk1.value-sk2.value" type="button">
+            <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button">
+            <input value="/" name="dali" onclick="rez.value=sk1.value/sk2.value" type="button">
+        </div>
+        <div>2.skaitlis<input type="text" name="sk2"> </div>
+        <hr>
+        <div>Rezultāts<input name="rez"> </div>
+    </form>
+        <script>
+function maksaCheckbox(){
+	let dz = document.querySelectorAll('input[type="checkbox"]');
+    let sum = 0;
+
+    for(let i = 0; i < dz.length; i++) {
+       if(dz[i].checked) sum += Number(dz[i].value);
+    }
+
+    document.getElementById("maksa").innerHTML="Jāmaksā "+sum;
+}
+</script>
+
+<p id="maksa"></p>
+
+<form>
+  <input type="checkbox" value="3.60"> kafija<br>
+  <input type="checkbox" value="2.50"> sula<br>
+  <input type="checkbox" value="3.20"> kakao<br>
+  <input type="checkbox" value="2.20"> tēja<br><br>
+
+  <input type="button" value="jāmaksā" onclick="maksaCheckbox()">
+</form>
+<br>
+<script>
+function maksaRadio(){
+	let dz = document.getElementsByName('drink');
+
+    for(let i = 0; i < dz.length; i++) {
+       if(dz[i].checked){
+          document.getElementById("price").innerHTML = "Jāmaksā " + dz[i].value;
+          return;
+       }
+	}
+}
+</script>
+
+<p>Izvēlies dzērienu:</p>
+<p id="price"></p>
+
+<form>
+  <input type="radio" name="drink" value="3.60"> kafija<br>
+  <input type="radio" name="drink" value="2.50"> sula<br>
+  <input type="radio" name="drink" value="3.20"> kakao<br><br>
+
+  <input type="button" id="poga2" value="jāmaksā" onclick="maksaRadio()">
+</form>
+    </body>
+</html>
