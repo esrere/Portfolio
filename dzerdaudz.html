@@ -1,1 +1,26 @@
+<p id="maksa"></p>
 
+<form>
+  <input type="checkbox" value="3.60"> kafija<br>
+  <input type="checkbox" value="2.50"> sula<br>
+  <input type="checkbox" value="3.20"> kakao<br>
+  <input type="checkbox" value="2.20"> tēja<br><br>
+
+  <input type="button" value="jāmaksā" onclick="maksaCheckbox()">
+</form>
+<br>
+<script>
+function maksaRadio(){
+	let dz = document.getElementsByName('drink');
+
+    for(let i = 0; i < dz.length; i++) {
+       if(dz[i].checked){
+          document.getElementById("price").innerHTML = "Jāmaksā " + dz[i].value;
+          return;
+       }
+	}
+}
+</script>
+
+<p>Izvēlies dzērienu:</p>
+<p id="price"></p>
