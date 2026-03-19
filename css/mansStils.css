@@ -5,5 +5,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 /* 
     Created on : Feb 20, 2026, 10:14:27 AM
     Author     : enuksa3
-*/body {background-color: #F7E9DF;}
-
+*/body {
+    background-color: #F7E9DF;
+}
+body {
+    margin-top: 60px;
+}
