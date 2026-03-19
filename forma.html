@@ -32,20 +32,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <input value="/" name="dali" onclick="rez.value=sk1.value/sk2.value" type="button">
         </div>
         <div>2.skaitlis<input type="text" name="sk2"> </div>
-        <hr>
-        <div>Rezultāts<input name="rez"> </div>
     </form>
-        <script>
-function maksaCheckbox(){
-	let dz = document.querySelectorAll('input[type="checkbox"]');
-    let sum = 0;
-
-    for(let i = 0; i < dz.length; i++) {
-       if(dz[i].checked) sum += Number(dz[i].value);
-    }
-
-    document.getElementById("maksa").innerHTML="Jāmaksā "+sum;
-}
-</script>
 </body>
 </html>
