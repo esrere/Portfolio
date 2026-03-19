@@ -6,14 +6,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Created on : Feb 20, 2026, 10:14:27 AM
     Author     : enuksa3
 */body {
-    background-color: #F7E9DF;
-}
-body {
-    margin-top: 60px;
+    background-color: #F7E9DF !important;
+    margin-top: 60px !important;
 }
 h1 {
-    color: #2A5739;
+    color: #2A5739 !important;
 }
 h2 {
-    color: #54402F;
+    color: #54402F !important;
 }
