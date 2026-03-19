@@ -7,9 +7,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : enuksa3
 */body {
     background-image: url("images/fons.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin-top: 60px !important;
 }
 h1 {
