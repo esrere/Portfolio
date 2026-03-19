@@ -6,7 +6,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Created on : Feb 20, 2026, 10:14:27 AM
     Author     : enuksa3
 */body {
-    background-image: url("images/fons.png");
+    background-image: url("images/fons.png") !important;
     margin-top: 60px !important;
 }
 h1 {
