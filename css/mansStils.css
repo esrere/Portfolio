@@ -5,13 +5,38 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 /* 
     Created on : Feb 20, 2026, 10:14:27 AM
     Author     : enuksa3
-*/body {
-    background-image: url("images/back.png") !important;
-    margin-top: 60px !important;
+
+body {
+    background-image: url("../images/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
 }
+
+
 h1 {
-    color: #2A5739 !important;
+    color: #2A5739;
+    margin-left: 10px;
 }
+
 h2 {
-    color: #54402F !important;
+    color: #54402F;
+    margin-left: 10px;
+}
+
+
+p {
+    margin-left: 10px;
+    max-width: 800px;
+}
+
+
+img {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+img:hover {
+    opacity: 0.9;
 }
