@@ -5,33 +5,43 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Formas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/mansStils.css">
     </head>
     <body>
-        <a href="index.html"> <img src="images/arow.webp" width="150" height="100"></a>
+        <div class=w3-top">
+            <div class="w3-bar w3-white w3-padding">
+                <a href="index.html#dat" class="w3-button">Sākums</a>
+                <a href="index.html#gi" class="w3-button">Attēlu apstrāde</a>
+                <a href="index.html#we" class="w3-button">Word, Excel</a>
+                <a href="index.html#kop" class="w3-button">Kopsavilkums</a>
+                <a href="otrais.html" class="w3-button">Individuālā tēma</a>
+            </div>
+        </div>
         <h1>Formas un ievadlauku piemērs</h1>
     <form>
         <p>Šodienas datums <input name="datums"></p>
         <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
-            <input onclick="datums.value=new Date();" name="poga" value="DATUMS" type="button">
+            <input type="button" onclick="datums.value=new Date();" name="poga" value="DATUMS">
         </p>
         <p>Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
-            <input value="RESET" type="reset">
+            <input type="reset" value="RESET">
         </p>
     </form>
-         <form>
-        <div>1.skaitlis<input type="text" name="sk1"> </div>
-        <div>
+        <hr>
+         <form class="w3-margin-bottom">
+        <p>1.skaitlis<input type="text" name="sk1"> </p>
+        <p>
             <input value="+" name="reiz" onclick="rez.value=Number(sk1.value)+Number(sk2.value)" type="button">
             <input value="-" name="reiz" onclick="rez.value=sk1.value-sk2.value" type="button">
             <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button">
             <input value="/" name="dali" onclick="rez.value=sk1.value/sk2.value" type="button">
-        </div>
-        <div>2.skaitlis<input type="text" name="sk2"> </div>
+        </p>
+        <p>2.skaitlis<input type="text" name="sk2"> </p>
+        <p>Rezultāts <input name="rez"></p>
     </form>
 </body>
 </html>
