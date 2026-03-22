@@ -5,35 +5,50 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Dzer</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/mansStils.css">
     </head>
     <body>
-<p id="maksa"></p>
-
-<form>
-  <input type="checkbox" value="3.60"> kafija<br>
-  <input type="checkbox" value="2.50"> sula<br>
-  <input type="checkbox" value="3.20"> kakao<br>
-  <input type="checkbox" value="2.20"> tēja<br><br>
-
-  <input type="button" value="jāmaksā" onclick="maksaCheckbox()">
-</form>
-<br>
-<script>
-function maksaRadio(){
-	let dz = document.getElementsByName('drink');
-
-    for(let i = 0; i < dz.length; i++) {
-       if(dz[i].checked){
-          document.getElementById("price").innerHTML = "Jāmaksā " + dz[i].value;
-          return;
-       }
+		<div class="w3-top">
+			<div class="w3-bar w3-white w3-padding">
+				<a href="index.html#dat" class="w3-button">Sākums</a>
+				<a href="index.html#gi" class="w3-button">Attēlu apstrāde</a>
+				<a href="index.html#we" class="w3-button">Word, Excel</a>
+				<a href="index.html#kop" class="w3-button">Kopsavilkums</a>
+				<a href="otrais.html" class="w3-button">Individuālā tēma</a>
+				<div class="w3-dropdown-hover">
+				    <button class="w3-button">Dzer</button>
+				    <div class="w3-dropdown-content w3-bar-block w3-border">
+				        <a href="dzer.html" class="w3-bar-item w3-button">Dzer</a>
+				        <a href="dzerdaudz.html" class="w3-bar-item w3-button">Dzerdaudz</a>
+				    </div>
+				</div>
+			</div>
+		</div>
+	<p>Izvēlies vienu dzērienu:</p>
+	<form>
+	  <input type="radio" value="3.60"> kafija<br>
+	  <input type="radio" value="2.50"> sula<br>
+	  <input type="radio" value="3.20"> kakao<br>
+	  <input type="radio" value="2.20"> tēja<br><br>
+	
+	  <input type="button" value="jāmaksā" onclick="maksaRadio()">
+	</form>
+	<p id="price"></p>
+	<script>
+	function maksaRadio(){
+		let dz = document.getElementsByName('drink');
+	
+	    for(let i = 0; i < dz.length; i++) {
+	       if(dz[i].checked){
+	          document.getElementById("price").innerHTML = "Jāmaksā " + dz[i].value;
+	          return;
+	       }
+		}
 	}
-}
 </script>
 	</body>
 </html>
