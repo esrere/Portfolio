@@ -5,82 +5,67 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 -->
 <html>
     <head>
-        <title>Formas</title>
+        <title>Personas datu aizsardzība</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/mansStils.css">
     </head>
-    <body class="w3-container">
-        <a href="index.html"> <img src="images/arow.webp" width="150" height="100"></a>
-        <h1>Formas un ievadlauku piemērs</h1>
-    <form class="w3-margin-bottom">
-        <p>Šodienas datums <input name="datums"></p>
-        <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
-            <input type="button" value="DATUMS" onclick="datums.value=new Date();">
-        </p>
-        <p>Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
-            <input type="reset" value="RESET">
-        </p>
-    </form>
-         <form class="w3-margin-bottom">
-        <p>1.skaitlis<input type="text" name="sk1"> </p>
-		<p>2.skaitlis<input type="text" name="sk2"> </p>
-        <p>
-            <input type="button" value="+" onclick="rez.value=Number(sk1.value)+Number(sk2.value)">
-            <input type="button" value="-" onclick="rez.value=sk1.value-sk2.value">
-            <input type="button" value="X" onclick="rez.value=sk1.value*sk2.value">
-            <input type="button" value="/" onclick="rez.value=sk1.value/sk2.value">
-        </p>
+    <body>
+		<div class="w3-top">
+			<a href="index.html#dat" class="w3-button">Sākums</a>
+			<a href="index.html#gi" class="w3-button">Attēlu apstrāde</a>
+			<a href="index.html#we" class="w3-button">Word, Excel</a>
+			<a href="index.html#kop" class="w3-button">Kopsavilkums</a>
+			<a href="otrais.html" class="w3-button">Individuālā tēma</a>
+		</div>
+        <div class="w3-row">
+			<div class="w3-col m6">
+				<img src="images/pakats..jpg" width="80%" class="w3-margin">
+			</div>
+			<div class="w3-col m6">
+				<h1>Personas privāto datu aizsardzība</h1>
 
-        <p>Rezultāts<input name="rez"> </p>
-    </form>
-	<hr>
-	<!--checkbox-->
-	<p>IZvēlies dzērienus</p>
-	<form>
-  		<input type="checkbox" value="3.60"> kafija<br>
-  		<input type="checkbox" value="2.50"> sula<br>
-  		<input type="checkbox" value="3.20"> kakao<br>
-  		<input type="checkbox" value="2.20"> tēja<br><br>
-  		<input type="button" value="jāmaksā" onclick="maksaCheckbox()">
-	</form>
-	<p id="maksa"></p>
-    <script>
-function maksaCheckbox(){
-	let dz = document.querySelectorAll('input[type="checkbox"]');
-    let sum = 0;
+        		<h3>Kas ir personas dati?</h3>
+		        <p>
+		            Personas dati ir jebkāda informācija par cilvēku,
+		            piemēram, vārds, uzvārds, telefona numurs vai adrese.
+		        </p>
 
-    for(let i = 0; i < dz.length; i++) {
-       if(dz[i].checked) sum += Number(dz[i].value);
-    }
-
-    document.getElementById("maksa").innerHTML="Jāmaksā "+sum;
-}
-</script>
-<hr>
-<script>
-function maksaRadio(){
-	let dz = document.getElementsByName('drink');
-
-    for(let i = 0; i < dz.length; i++) {
-       if(dz[i].checked){
-          document.getElementById("price").innerHTML = "Jāmaksā " + dz[i].value;
-          return;
-       }
-	}
-}
-</script>
-
-<p>Izvēlies dzērienu:</p>
-<p id="price"></p>
-
-<form>
-  <input type="radio" name="drink" value="3.60"> kafija<br>
-  <input type="radio" name="drink" value="2.50"> sula<br>
-  <input type="radio" name="drink" value="3.20"> kakao<br><br>
-
-  <input type="button" id="poga2" value="jāmaksā" onclick="maksaRadio()">
-</form>
+		        <h3>Kāpēc tie ir jāaizsargā?</h3>
+		        <p>
+		            Ja personas dati nonāk nepareizās rokās,
+		            tie var tikt izmantoti ļaunprātīgi.
+		        </p>
+		
+		        <p>
+		            Tāpēc ir svarīgi sargāt savu informāciju un
+		            neizpaust to svešiem cilvēkiem.
+		        </p>
+		
+		        <h3>Kā aizsargāt savus datus?</h3>
+		        <p>
+		            Neizpaust paroles un personīgo informāciju citiem.
+		        </p>
+		
+		        <p>
+		            Izmantot drošas paroles un regulāri tās mainīt.
+		        </p>
+		
+		        <p>
+		            Nepieņemt aizdomīgus ziņojumus vai saites internetā.
+		        </p>
+		
+		        <h3>Mans darbs</h3>
+		        <p>
+		            Šī plakāta izveidē es izmantoju Inkscape programmu.
+		        </p>
+		
+		        <p>
+		            Es centos attēlot svarīgāko informāciju vienkāršā un saprotamā veidā.
+		        </p>
+				<a href="https://lvportals.lv/e-konsultacijas/16592-datu-aizsardzibas-pasakumi-katram-uznemumam-bus-atskirigi-2019">Avots</a>
+			</div>
+		</div>
     </body>
 </html>
