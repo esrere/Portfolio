@@ -16,12 +16,12 @@ body {
 
 
 h1 {
-    color: #D4ECFF;
+    color: #D4ECFF !important;
     margin-left: 10px;
 }
 
 h2 {
-    color: #386996;
+    color: #386996 !important;
     margin-left: 10px;
 }
 
