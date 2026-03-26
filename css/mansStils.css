@@ -16,7 +16,7 @@ body {
 
 
 h1 {
-    color: #E5F2FF !important;
+    color: #F5FBFF !important;
     margin-left: 10px;
 }
 
@@ -25,6 +25,10 @@ h2 {
     margin-left: 10px;
 }
 
+h3 {
+    color: #1C4B6B !important;
+    margin-left: 10px;
+}
 
 p {
     margin-left: 10px;
