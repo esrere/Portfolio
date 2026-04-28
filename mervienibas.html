@@ -10,6 +10,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        
+        <h1>Informācijas daudzuma mērvienības</h1>
+        <form name="merv">
+            <p>Baiti: <input type="text" name="b"></p>
+            <p>Kilobaiti: <input type="text" name="kb"></p>
+            <p>Megabaiti: <input type="text" name="mb"></p>
+
+            <input type="button" value="Pārvērst no Baitiem" onclick="noBaitiem();">
+            <input type="button" value="Notīrīt" onclick="this.form.reset();">
+        </form>    
     </body>
 </html>
